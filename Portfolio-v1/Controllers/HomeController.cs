@@ -18,7 +18,7 @@ namespace Portfolio_v1.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Projects()
         {
             return View();
         }
