@@ -1,22 +1,61 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+/* Apply styles only to the body with the "portfolio-page" class */
+body.portfolio-page {
+    font-family: Arial, sans-serif;
+    margin: 100px;
+    padding: 0;
+}
+
+body.portfolio-page .container {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+body.portfolio-page .profile {
+    display: flex;
+}
+
+body.portfolio-page .profile-photo {
+    width: 200px; /* Adjust the width of your photo */
+    height: 200px;
+    border-radius: 50%; /* Optional: makes the photo round */
+    margin-right: 20px; /* Adjust the spacing between the photo and description */
+}
+
+body.portfolio-page .profile-description {
+    max-width: 600px; /* Adjust the width of the description */
+}
+
+body.portfolio-page .profile h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+body.portfolio-page .profile p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body.portfolio-page .profile ul {
+    columns: 2;
 }
